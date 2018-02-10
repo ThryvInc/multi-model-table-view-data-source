@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'MultiModelTableViewDataSource_Example' do
+  pod 'MultiModelTableViewDataSource', :path => '../'
+
+  target 'MultiModelTableViewDataSource_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0.2'
+  end
+end
