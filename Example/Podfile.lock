@@ -1,0 +1,22 @@
+PODS:
+  - MultiModelTableViewDataSource (0.1.0)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - MultiModelTableViewDataSource (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+
+EXTERNAL SOURCES:
+  MultiModelTableViewDataSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MultiModelTableViewDataSource: 865ef7c0e115380ce7e08b862544f466bd2dd726
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 421a08f33074266aadb0af6158c3207df507a2b7
+
+COCOAPODS: 1.2.1

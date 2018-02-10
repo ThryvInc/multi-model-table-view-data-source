@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiModelTableViewDataSource'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MultiModelTableViewDataSource.'
+  s.version          = '0.0.1'
+  s.summary          = 'MultiModelTableViewDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod moves configuration from the data source to individual cell model classes. By doing so, it becomes straightforward to mix and match cells within the same UITableView.
                        DESC
 
-  s.homepage         = 'https://github.com/Elliot/MultiModelTableViewDataSource'
+  s.homepage         = 'https://github.com/ThryvInc/multi-model-table-view-data-source'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Elliot' => 'elliot.schrock@gmail.com' }
-  s.source           = { :git => 'https://github.com/Elliot/MultiModelTableViewDataSource.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Elliot' => '' }
+  s.source           = { :git => 'https://github.com/ThryvInc/multi-model-table-view-data-source.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/elliot_schrock'
 
   s.ios.deployment_target = '8.0'
 
