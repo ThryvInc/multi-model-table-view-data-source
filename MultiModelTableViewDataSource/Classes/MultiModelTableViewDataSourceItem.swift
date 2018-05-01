@@ -7,28 +7,28 @@
 
 import UIKit
 
-protocol MultiModelTableViewDataSourceItem {
+public protocol MultiModelTableViewDataSourceItem {
     func cellIdentifier() -> String
     func cellClass() -> UITableViewCell.Type
     func configureCell(_ cell: UITableViewCell)
 }
 
-class ConcreteMultiModelTableViewDataSourceItem<T>: MultiModelTableViewDataSourceItem where T: UITableViewCell {
+open class ConcreteMultiModelTableViewDataSourceItem<T>: MultiModelTableViewDataSourceItem where T: UITableViewCell {
     private let identifier: String
     
     init(identifier: String) {
         self.identifier = identifier
     }
     
-    func cellIdentifier() -> String {
+    open func cellIdentifier() -> String {
         return identifier
     }
     
-    func cellClass() -> UITableViewCell.Type {
+    open func cellClass() -> UITableViewCell.Type {
         return T.self
     }
     
-    func configureCell(_ cell: UITableViewCell) {
+    open func configureCell(_ cell: UITableViewCell) {
         // NO OP: override me!
     }
 }

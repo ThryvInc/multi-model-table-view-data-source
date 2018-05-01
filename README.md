@@ -22,7 +22,7 @@ pod 'MultiModelTableViewDataSource'
 
 ## Author
 
-Elliot, elliot.schrock@gmail.com
+Elliot Schrock
 
 ## License
 

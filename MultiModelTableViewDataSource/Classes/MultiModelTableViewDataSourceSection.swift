@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MultiModelTableViewDataSourceSection: NSObject {
+open class MultiModelTableViewDataSourceSection: NSObject {
     var title: String?
     var items: [MultiModelTableViewDataSourceItem]?
 }
