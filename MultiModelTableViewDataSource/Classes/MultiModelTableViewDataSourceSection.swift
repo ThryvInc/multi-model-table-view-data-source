@@ -8,6 +8,6 @@
 import UIKit
 
 open class MultiModelTableViewDataSourceSection: NSObject {
-    var title: String?
-    var items: [MultiModelTableViewDataSourceItem]?
+    open var title: String?
+    open var items: [MultiModelTableViewDataSourceItem]?
 }

@@ -16,7 +16,7 @@ public protocol MultiModelTableViewDataSourceItem {
 open class ConcreteMultiModelTableViewDataSourceItem<T>: MultiModelTableViewDataSourceItem where T: UITableViewCell {
     private let identifier: String
     
-    init(identifier: String) {
+    public init(identifier: String) {
         self.identifier = identifier
     }
     
