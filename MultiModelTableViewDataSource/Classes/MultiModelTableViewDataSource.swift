@@ -25,8 +25,9 @@ open class MultiModelTableViewDataSource: NSObject, UITableViewDataSource {
                 if let items = section.items {
                     for item in items {
                         let className = String(describing: item.cellClass())
-                        if Bundle.main.path(forResource: className, ofType: "nib") != nil {
-                            tableView.register(UINib(nibName: className, bundle: nil), forCellReuseIdentifier: item.cellIdentifier())
+                        let bundle = Bundle(for: item.cellClass())
+                        if bundle.path(forResource: className, ofType: "nib") != nil {
+                            tableView.register(UINib(nibName: className, bundle: bundle), forCellReuseIdentifier: item.cellIdentifier())
                         } else {
                             tableView.register(item.cellClass(), forCellReuseIdentifier: item.cellIdentifier())
                         }
@@ -49,7 +50,8 @@ open class MultiModelTableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections?[section].items?.count ?? 0
+        let count = sections?[section].items?.count ?? 0
+        return count
     }
     
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

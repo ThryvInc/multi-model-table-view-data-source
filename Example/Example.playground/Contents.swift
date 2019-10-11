@@ -1,20 +1,25 @@
-//
-//  ViewController.swift
-//  MultiModelTableViewDataSource
-//
-//  Created by Elliot on 02/10/2018.
-//  Copyright (c) 2018 Elliot. All rights reserved.
-//
-
 import UIKit
+import PlaygroundSupport
 import MultiModelTableViewDataSource
 
-class ViewController: UIViewController {
+class NumberItem: ConcreteMultiModelTableViewDataSourceItem<UITableViewCell> {
+    let value: Int
+    init(identifier: String = "cell", value: Int) {
+        self.value = value
+        super.init(identifier: identifier)
+    }
+    
+    override func configureCell(_ cell: UITableViewCell) {
+        cell.textLabel?.text = "\(value)"
+    }
+}
+
+open class MyViewController : UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         for i in 0...17 {
@@ -26,13 +31,14 @@ class ViewController: UIViewController {
         section.items = items
         
         let dataSource = MultiModelTableViewDataSource()
+        dataSource.sections = [section]
         dataSource.tableView = tableView
         tableView.dataSource = dataSource
-        dataSource.sections = [section]
-        tableView.reloadData()
     }
     
-    override func loadView() {
+    // MARK: view stuff
+    
+    open override func loadView() {
         view = UIView()
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -49,14 +55,7 @@ class ViewController: UIViewController {
             ])
     }
 }
-class NumberItem: ConcreteMultiModelTableViewDataSourceItem<UITableViewCell> {
-    let value: Int
-    init(identifier: String = "cell", value: Int) {
-        self.value = value
-        super.init(identifier: identifier)
-    }
-    
-    override func configureCell(_ cell: UITableViewCell) {
-        cell.textLabel?.text = "\(value)"
-    }
-}
+
+PlaygroundPage.current.liveView = MyViewController()
+PlaygroundPage.current.needsIndefiniteExecution = true
+
