@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiModelTableViewDataSource'
-  s.version          = '0.0.3'
+  s.version          = '0.0.6'
   s.summary          = 'MultiModelTableViewDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
 
 # This description is used to generate tags and improve search results.
