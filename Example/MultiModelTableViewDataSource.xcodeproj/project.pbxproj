@@ -28,11 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CB8BABA1B12DEE1C13B3418 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0CB8BABA1B12DEE1C13B3418 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1CE5F5BDD6F3F1CA740D63D2 /* Pods_MultiModelTableViewDataSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModelTableViewDataSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5F7A0206C2E0E3563B8D4C /* Pods-MultiModelTableViewDataSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModelTableViewDataSource_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF96C7F961644EAC6D477A7 /* Pods-MultiModelTableViewDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModelTableViewDataSource_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
-		553E8433263AB958088C7F3A /* MultiModelTableViewDataSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MultiModelTableViewDataSource.podspec; path = ../MultiModelTableViewDataSource.podspec; sourceTree = "<group>"; };
+		4982A5E122EB88B70056707F /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		553E8433263AB958088C7F3A /* MultiModelTableViewDataSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MultiModelTableViewDataSource.podspec; path = ../MultiModelTableViewDataSource.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MultiModelTableViewDataSource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModelTableViewDataSource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +44,7 @@
 		607FACE51AFB9204008FA782 /* MultiModelTableViewDataSource_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiModelTableViewDataSource_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		631BE0AAF84550E4134193CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		631BE0AAF84550E4134193CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7B1B612727357FE0E6E2A605 /* Pods-MultiModelTableViewDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModelTableViewDataSource_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B228AEDFDBACAC84B381EE41 /* Pods-MultiModelTableViewDataSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModelTableViewDataSource_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAF536FE6C464A923030D534 /* Pods_MultiModelTableViewDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModelTableViewDataSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				4982A5E122EB88B70056707F /* Example.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for MultiModelTableViewDataSource */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -171,7 +173,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				5B9BE217A90F79A6AFE66097 /* [CP] Embed Pods Frameworks */,
-				8E3AFEA93B72B5E1C56429F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +192,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				1C869F2FE45D40E49297C678 /* [CP] Embed Pods Frameworks */,
-				4A5813BADF1466716A71A69B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HK6WSAR793;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HK6WSAR793;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -229,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,13 +273,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3D66693BCABED505198D388D /* [CP] Check Pods Manifest.lock */ = {
@@ -285,28 +293,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiModelTableViewDataSource_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4A5813BADF1466716A71A69B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Tests/Pods-MultiModelTableViewDataSource_Tests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B9BE217A90F79A6AFE66097 /* [CP] Embed Pods Frameworks */ = {
@@ -315,28 +311,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MultiModelTableViewDataSource/MultiModelTableViewDataSource.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiModelTableViewDataSource.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E3AFEA93B72B5E1C56429F6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiModelTableViewDataSource_Example/Pods-MultiModelTableViewDataSource_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9AE3E234F349A2963707D53 /* [CP] Check Pods Manifest.lock */ = {
@@ -345,13 +329,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultiModelTableViewDataSource_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,7 +495,9 @@
 			baseConfigurationReference = 7B1B612727357FE0E6E2A605 /* Pods-MultiModelTableViewDataSource_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = MultiModelTableViewDataSource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -523,7 +512,9 @@
 			baseConfigurationReference = 3EF96C7F961644EAC6D477A7 /* Pods-MultiModelTableViewDataSource_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = MultiModelTableViewDataSource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -537,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B228AEDFDBACAC84B381EE41 /* Pods-MultiModelTableViewDataSource_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -558,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E5F7A0206C2E0E3563B8D4C /* Pods-MultiModelTableViewDataSource_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

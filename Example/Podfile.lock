@@ -1,22 +1,27 @@
 PODS:
-  - MultiModelTableViewDataSource (0.1.0)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
+  - MultiModelTableViewDataSource (0.0.4)
+  - Nimble (8.0.4)
+  - Quick (2.2.0)
 
 DEPENDENCIES:
   - MultiModelTableViewDataSource (from `../`)
-  - Nimble (~> 7.0.2)
-  - Quick (~> 1.2.0)
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
 
 EXTERNAL SOURCES:
   MultiModelTableViewDataSource:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MultiModelTableViewDataSource: 865ef7c0e115380ce7e08b862544f466bd2dd726
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  MultiModelTableViewDataSource: bab8d0bf5dcee0b771b6ef6c452009e4659999c9
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 
-PODFILE CHECKSUM: 421a08f33074266aadb0af6158c3207df507a2b7
+PODFILE CHECKSUM: b675b8d3eb630654a49ad641e9f4a655b2e89388
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.7.2
