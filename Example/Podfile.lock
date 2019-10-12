@@ -1,5 +1,5 @@
 PODS:
-  - MultiModelTableViewDataSource (0.0.4)
+  - MultiModelTableViewDataSource (0.0.7)
   - Nimble (8.0.4)
   - Quick (2.2.0)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MultiModelTableViewDataSource: bab8d0bf5dcee0b771b6ef6c452009e4659999c9
+  MultiModelTableViewDataSource: 1433ce94b91a686bc1232a62672aeb24b80bed25
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 

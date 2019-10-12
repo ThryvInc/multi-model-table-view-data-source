@@ -32,3 +32,17 @@ open class ConcreteMultiModelTableViewDataSourceItem<T>: MultiModelTableViewData
         // NO OP: override me!
     }
 }
+
+open class FunctionalMultiModelTableViewDataSourceItem<T>: ConcreteMultiModelTableViewDataSourceItem<T> where T: UITableViewCell {
+    var identifier: String = "cell"
+    private let configureCell: (UITableViewCell) -> Void
+
+    public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void) {
+        self.configureCell = configureCell
+        super.init(identifier: identifier)
+    }
+
+    open override func configureCell(_ cell: UITableViewCell) {
+        configureCell(cell)
+    }
+}

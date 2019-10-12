@@ -39,6 +39,7 @@ class MyViewController : UIViewController {
         tableView.reloadData()
     }
     
+    // just for playground, could use a xib, storyboard, or your own code based ui
     func setupLayout() {
         tableView = UITableView(frame: view.frame, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false

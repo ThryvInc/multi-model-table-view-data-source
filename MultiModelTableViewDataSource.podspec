@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiModelTableViewDataSource'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'MultiModelTableViewDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
+  s.swift_versions   = ['4.2', '5.0', '5.1']
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,5 +39,5 @@ This pod moves configuration from the data source to individual cell model class
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#  s.dependency 'LithoOperators'
 end

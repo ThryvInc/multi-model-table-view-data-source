@@ -62,5 +62,4 @@ open class MultiModelTableViewDataSource: NSObject, UITableViewDataSource {
         }
         return UITableViewCell()
     }
-
 }
