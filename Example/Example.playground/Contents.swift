@@ -14,35 +14,32 @@ class NumberItem: ConcreteMultiModelTableViewDataSourceItem<UITableViewCell> {
     }
 }
 
-open class MyViewController : UIViewController {
+class MyViewController : UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
+    let dataSource = MultiModelTableViewDataSource()
     
-    open override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for i in 0...17 {
-            numbers.append(i)
-        }
-        
+        numbers.append(contentsOf: 1...17)
+        setupTableView()
+    }
+    
+    func setupTableView() {
+        setupLayout()
+
         let items = numbers.map { NumberItem(value: $0) }
         let section = MultiModelTableViewDataSourceSection()
         section.items = items
-        
-        let dataSource = MultiModelTableViewDataSource()
-        dataSource.sections = [section]
+
         dataSource.tableView = tableView
         tableView.dataSource = dataSource
+        dataSource.sections = [section]
+        tableView.reloadData()
     }
     
-    // MARK: view stuff
-    
-    open override func loadView() {
-        view = UIView()
-        view.backgroundColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
+    func setupLayout() {
         tableView = UITableView(frame: view.frame, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)
@@ -54,8 +51,14 @@ open class MyViewController : UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0)
             ])
     }
+    
+    override func loadView() {
+        view = UIView()
+        view.backgroundColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        super.loadView()
+    }
 }
 
 PlaygroundPage.current.liveView = MyViewController()
 PlaygroundPage.current.needsIndefiniteExecution = true
-

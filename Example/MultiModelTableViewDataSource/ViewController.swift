@@ -13,19 +13,17 @@ class ViewController: UIViewController {
     var tableView: UITableView!
     
     var numbers: [Int] = [Int]()
+    let dataSource = MultiModelTableViewDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 0...17 {
-            numbers.append(i)
-        }
+        numbers.append(contentsOf: 1...17)
         
         let items = numbers.map { NumberItem(value: $0) }
         let section = MultiModelTableViewDataSourceSection()
         section.items = items
         
-        let dataSource = MultiModelTableViewDataSource()
         dataSource.tableView = tableView
         tableView.dataSource = dataSource
         dataSource.sections = [section]
@@ -47,6 +45,8 @@ class ViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0)
             ])
+        
+        super.loadView()
     }
 }
 class NumberItem: ConcreteMultiModelTableViewDataSourceItem<UITableViewCell> {
