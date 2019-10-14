@@ -46,3 +46,16 @@ open class FunctionalMultiModelTableViewDataSourceItem<T>: ConcreteMultiModelTab
         configureCell(cell)
     }
 }
+
+public protocol Tappable {
+    var onTap: () -> Void { get }
+}
+
+open class TappableFunctionalMultiModelItem<T>: FunctionalMultiModelTableViewDataSourceItem<T>, Tappable where T: UITableViewCell {
+    public var onTap: () -> Void
+    
+    public init(identifier: String, _ configureCell: @escaping (UITableViewCell) -> Void, _ onTap: @escaping () -> Void) {
+        self.onTap = onTap
+        super.init(identifier: identifier, configureCell)
+    }
+}

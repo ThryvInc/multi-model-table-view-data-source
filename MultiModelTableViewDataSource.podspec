@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiModelTableViewDataSource'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'MultiModelTableViewDataSource makes it dead simple to create table views with multiple types of cells coexisting.'
-  s.swift_versions   = ['4.2', '5.0', '5.1']
+  s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1']
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
